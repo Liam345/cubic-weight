@@ -28,7 +28,6 @@ async function fetchProducts(endpoint) {
     fetchProducts(data.next);
   } else {
     calculateCubicWeight();
-    // return;
   }
 }
 
