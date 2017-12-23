@@ -1,9 +1,11 @@
 # Average Cubic-weight web app
 
+Language used: Javascript
+
 The application logs the Average cubic weight of all the Air Conditioners
 from the list of products in the paginated API.
 The first endpoint of the API is /api/products/1
-The response of the API call is a data and the next endpoint.
+The response of the API call is a data object and the next endpoint.
 The application makes a call to subsequent endpoints and filters products with category "Air Conditioners" until the next endpoint is null i.e. it is the last page.
 
 Assumption : Average cubic weight is calculated by
@@ -26,5 +28,7 @@ To run this project in your command line
    ### `cd cubic-weight`
 3. Install dependency modules
    ### `npm install`
-4. Navigate to the dist directory. The directory contatins a main.js file and a index.html file
-5. Open the index.html file in your preferred browser.
+4. Run the command below to transpile Es6 code to Es5
+   ### `npm run build`
+5. Navigate to the dist directory. The directory contains an index.html file
+6. Open the index.html file in your preferred browser.
